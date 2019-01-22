@@ -1,5 +1,6 @@
 body {
   margin: auto 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .zone {
@@ -22,6 +23,11 @@ body {
 }
 
 /* NAV */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .main-nav {
   display: flex;
   margin: auto;
@@ -44,10 +50,15 @@ body {
 
 /* COVER */
 .cover {
+  padding-top: 60px;
   display: flex;
   height: 50vh;
   align-items: center;
   justify-content: center;
+}
+
+.cover-img {
+  width: 20rem;
 }
 
 /* GRID */
@@ -65,6 +76,13 @@ body {
   background-color: #444;
   padding: 130px;
   margin: 20px;
+}
+
+.box:hover {
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
 }
 
  /* FOOTER */
